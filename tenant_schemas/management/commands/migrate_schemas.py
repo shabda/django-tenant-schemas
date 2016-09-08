@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.core.management.commands.migrate import Command as MigrateCommand
 from django.db import connection
+import django
 
 from tenant_schemas.management.commands import SyncCommon
 from tenant_schemas.utils import get_tenant_model, get_public_schema_name, schema_exists
